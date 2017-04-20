@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A31F8281EA8649C00018466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8271EA8649C00018466 /* AppDelegate.swift */; };
-		3A31F82A1EA8649C00018466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8291EA8649C00018466 /* ViewController.swift */; };
-		3A31F82D1EA8649C00018466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A31F82B1EA8649C00018466 /* Main.storyboard */; };
 		3A31F82F1EA8649C00018466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A31F82E1EA8649C00018466 /* Assets.xcassets */; };
-		3A31F8321EA8649C00018466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A31F8301EA8649C00018466 /* LaunchScreen.storyboard */; };
 		3A31F83D1EA8649D00018466 /* YFLWBSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F83C1EA8649D00018466 /* YFLWBSwiftTests.swift */; };
 		3A31F8481EA8649D00018466 /* YFLWBSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8471EA8649D00018466 /* YFLWBSwiftUITests.swift */; };
 /* End PBXBuildFile section */
@@ -36,10 +33,7 @@
 /* Begin PBXFileReference section */
 		3A31F8241EA8649C00018466 /* YFLWBSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLWBSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31F8271EA8649C00018466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A31F8291EA8649C00018466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A31F82C1EA8649C00018466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A31F82E1EA8649C00018466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A31F8311EA8649C00018466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A31F8331EA8649C00018466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A31F8381EA8649D00018466 /* YFLWBSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLWBSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31F83C1EA8649D00018466 /* YFLWBSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YFLWBSwiftTests.swift; sourceTree = "<group>"; };
@@ -77,6 +71,7 @@
 		3A31F81B1EA8649C00018466 = {
 			isa = PBXGroup;
 			children = (
+				3A31F8B41EA8AC3300018466 /* Classes */,
 				3A31F8261EA8649C00018466 /* YFLWBSwift */,
 				3A31F83B1EA8649D00018466 /* YFLWBSwiftTests */,
 				3A31F8461EA8649D00018466 /* YFLWBSwiftUITests */,
@@ -98,10 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3A31F8271EA8649C00018466 /* AppDelegate.swift */,
-				3A31F8291EA8649C00018466 /* ViewController.swift */,
-				3A31F82B1EA8649C00018466 /* Main.storyboard */,
 				3A31F82E1EA8649C00018466 /* Assets.xcassets */,
-				3A31F8301EA8649C00018466 /* LaunchScreen.storyboard */,
 				3A31F8331EA8649C00018466 /* Info.plist */,
 			);
 			path = YFLWBSwift;
@@ -123,6 +115,85 @@
 				3A31F8491EA8649D00018466 /* Info.plist */,
 			);
 			path = YFLWBSwiftUITests;
+			sourceTree = "<group>";
+		};
+		3A31F8B41EA8AC3300018466 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A31F8B51EA8AC3300018466 /* Model */,
+				3A31F8B61EA8AC3300018466 /* Tools */,
+				3A31F8B71EA8AC3300018466 /* View */,
+				3A31F8BD1EA8AC3300018466 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A31F8B51EA8AC3300018466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A31F8B61EA8AC3300018466 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3A31F8B71EA8AC3300018466 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A31F8B81EA8AC3300018466 /* Discover */,
+				3A31F8B91EA8AC3300018466 /* Home */,
+				3A31F8BA1EA8AC3300018466 /* Main */,
+				3A31F8BB1EA8AC3300018466 /* Message */,
+				3A31F8BC1EA8AC3300018466 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A31F8B81EA8AC3300018466 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		3A31F8B91EA8AC3300018466 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3A31F8BA1EA8AC3300018466 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3A31F8BB1EA8AC3300018466 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3A31F8BC1EA8AC3300018466 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3A31F8BD1EA8AC3300018466 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A31F8321EA8649C00018466 /* LaunchScreen.storyboard in Resources */,
 				3A31F82F1EA8649C00018466 /* Assets.xcassets in Resources */,
-				3A31F82D1EA8649C00018466 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A31F82A1EA8649C00018466 /* ViewController.swift in Sources */,
 				3A31F8281EA8649C00018466 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,25 +365,6 @@
 			targetProxy = 3A31F8441EA8649D00018466 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3A31F82B1EA8649C00018466 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A31F82C1EA8649C00018466 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A31F8301EA8649C00018466 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A31F8311EA8649C00018466 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3A31F84A1EA8649D00018466 /* Debug */ = {
@@ -413,8 +462,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KK5694975F;
 				INFOPLIST_FILE = YFLWBSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLWBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,8 +477,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = KK5694975F;
 				INFOPLIST_FILE = YFLWBSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLWBSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +565,7 @@
 				3A31F84E1EA8649D00018466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A31F84F1EA8649D00018466 /* Build configuration list for PBXNativeTarget "YFLWBSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +574,7 @@
 				3A31F8511EA8649D00018466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A31F8521EA8649D00018466 /* Build configuration list for PBXNativeTarget "YFLWBSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +583,7 @@
 				3A31F8541EA8649D00018466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
