@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        window?.rootViewController = WBBaseViewController()
+        window?.rootViewController = WBTabBarController()
         window?.makeKeyAndVisible()
         
         return true
