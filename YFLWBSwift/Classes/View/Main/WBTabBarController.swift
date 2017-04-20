@@ -31,7 +31,10 @@ extension WBTabBarController{
      func setUpChildViewControllers(){
         
         let array = [
-            ["clsName":"WBHomeViewController","title":"首页","imageName":""]
+            ["clsName":"WBHomeViewController","title":"首页","imageName":"home"],
+            ["clsName":"WBMessageController","title":"消息","imageName":"message_center"],
+            ["clsName":"WBDiscoverController","title":"发现","imageName":"discover"],
+            ["clsName":"WBProfileController","title":"我","imageName":"profile"]
         ]
         
         var arrayM = [UIViewController]()
@@ -57,6 +60,8 @@ extension WBTabBarController{
         //2.创建视图控制器
         let vc = cls.init()
         vc.title = title
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage (named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
         let nav = WBNavigationController(rootViewController: vc)
         return nav
         
