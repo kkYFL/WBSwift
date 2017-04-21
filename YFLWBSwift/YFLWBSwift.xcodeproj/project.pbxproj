@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A20FA5B1EA9F4B500CD5F7E /* WBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A20FA5A1EA9F4B500CD5F7E /* WBTestViewController.swift */; };
 		3A31F8281EA8649C00018466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8271EA8649C00018466 /* AppDelegate.swift */; };
 		3A31F82F1EA8649C00018466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A31F82E1EA8649C00018466 /* Assets.xcassets */; };
 		3A31F83D1EA8649D00018466 /* YFLWBSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F83C1EA8649D00018466 /* YFLWBSwiftTests.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A20FA5A1EA9F4B500CD5F7E /* WBTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTestViewController.swift; sourceTree = "<group>"; };
 		3A31F8241EA8649C00018466 /* YFLWBSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLWBSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A31F8271EA8649C00018466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A31F82E1EA8649C00018466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				3A31F8BE1EA8AD2E00018466 /* WBTabBarController.swift */,
 				3A31F8C01EA8AD4F00018466 /* WBNavigationController.swift */,
 				3A31F8C21EA8AD6C00018466 /* WBBaseViewController.swift */,
+				3A20FA5A1EA9F4B500CD5F7E /* WBTestViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				3A31F8C31EA8AD6C00018466 /* WBBaseViewController.swift in Sources */,
 				3A31F8CB1EA8ADC400018466 /* WBProfileController.swift in Sources */,
 				3A31F8C91EA8ADB400018466 /* WBMessageController.swift in Sources */,
+				3A20FA5B1EA9F4B500CD5F7E /* WBTestViewController.swift in Sources */,
 				3A31F8EC1EA8B67C00018466 /* UIButton+CZAddition.m in Sources */,
 				3A31F8EF1EA8B67C00018466 /* UIScreen+CZAddition.m in Sources */,
 				3A31F8C71EA8ADA600018466 /* WBHomeViewController.swift in Sources */,

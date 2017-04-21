@@ -100,6 +100,7 @@ extension WBTabBarController{
         //字体大小  注意：改变字体大小要在normal 模式下修改
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: UIControlState(rawValue: 0))
         
+        //初始化导航控制器的时候 会调用push放法将rootViewController压入栈中
         let nav = WBNavigationController(rootViewController: vc)
         return nav
         
