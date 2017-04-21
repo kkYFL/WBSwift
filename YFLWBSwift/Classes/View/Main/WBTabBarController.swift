@@ -60,8 +60,17 @@ extension WBTabBarController{
         //2.创建视图控制器
         let vc = cls.init()
         vc.title = title
+        
+        //3.设置tabItem图像
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
         vc.tabBarItem.selectedImage = UIImage (named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
+        
+        //4.设置tabbar标题字体(一种方法)
+        //字体颜色
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orange], for: .selected)
+        //字体大小  注意：改变字体大小要在normal 模式下修改
+        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 20)], for: UIControlState(rawValue: 0))
+        
         let nav = WBNavigationController(rootViewController: vc)
         return nav
         
