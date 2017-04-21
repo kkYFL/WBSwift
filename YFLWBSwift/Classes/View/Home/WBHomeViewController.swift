@@ -15,6 +15,24 @@ class WBHomeViewController: WBBaseViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    //重写
+    override func setUpUI() {
+        super.setUpUI()
+        
+        //设置导航栏按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
+    }
+    
+    //显示好友
+    @objc private func showFriends() {
+        print(#function)
+        
+        let vc = UIViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,14 +40,6 @@ class WBHomeViewController: WBBaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+

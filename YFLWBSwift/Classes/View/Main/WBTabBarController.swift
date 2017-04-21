@@ -14,8 +14,19 @@ class WBTabBarController: UITabBarController {
         super.viewDidLoad()
         
         setUpChildViewControllers()
+        
+        setUpComposeButton()
     }
+    
+    //MARK：私有控件
+    //撰写按钮
+    lazy var composeButton: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    
 
+    //MARK: - 监听方法
+    func composeBtnStatus() {
+      print("撰写微博")
+    }
 }
 
 /*
@@ -33,6 +44,7 @@ extension WBTabBarController{
         let array = [
             ["clsName":"WBHomeViewController","title":"首页","imageName":"home"],
             ["clsName":"WBMessageController","title":"消息","imageName":"message_center"],
+            ["clsName":"UIViewController"],
             ["clsName":"WBDiscoverController","title":"发现","imageName":"discover"],
             ["clsName":"WBProfileController","title":"我","imageName":"profile"]
         ]
@@ -45,6 +57,23 @@ extension WBTabBarController{
         viewControllers = arrayM
         
     }
+    
+    
+    //设置撰写按钮
+    func setUpComposeButton() {
+        tabBar.addSubview(composeButton)
+        //设置按钮的位置
+        let count = CGFloat(childViewControllers.count)
+        //向内缩进宽度减少 能够让按钮的宽度变大 盖住容错点 防止穿帮
+        let w = tabBar.bounds.width / count - 1
+        //CGRectInSet   正数向内缩进 ，负数向外扩展
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
+        
+        //添加监听事件
+        composeButton.addTarget(self, action: #selector(composeBtnStatus), for: .touchUpInside)
+    }
+    
+    
     
     /*
      使用一个字典创建一个子控制器
@@ -69,7 +98,7 @@ extension WBTabBarController{
         //字体颜色
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orange], for: .selected)
         //字体大小  注意：改变字体大小要在normal 模式下修改
-        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 20)], for: UIControlState(rawValue: 0))
+        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: UIControlState(rawValue: 0))
         
         let nav = WBNavigationController(rootViewController: vc)
         return nav

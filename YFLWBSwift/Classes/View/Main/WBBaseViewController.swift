@@ -13,7 +13,8 @@ class WBBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.cz_random()
+        setUpUI()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +22,11 @@ class WBBaseViewController: UIViewController {
 
     }
     
-
-
+    //MARK：- 设置界面
+    func setUpUI() {
+        self.view.backgroundColor = UIColor.cz_random()
+    }
+    
 }
+
+
