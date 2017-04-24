@@ -48,6 +48,8 @@ class WBBaseViewController: UIViewController {
         navigationBar.items = [navItem]
         //设置 navBar 渲染颜色
         navigationBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
+        //设置 navBar 字体颜色 
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray]
     }
     
 }

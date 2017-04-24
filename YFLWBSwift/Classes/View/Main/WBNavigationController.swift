@@ -34,8 +34,11 @@ class WBNavigationController: UINavigationController {
             //判断控制器的类型
             if let vc = viewController as? WBBaseViewController {
                 //取出自定义的naviItem
-                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParentVC))
+                //同时修改返回item方法，设置返回按钮图标显示
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, fontSize: 16, target: self, action: #selector(popToParentVC), isBack: true)
             }
+            
+            
         }
         
 
