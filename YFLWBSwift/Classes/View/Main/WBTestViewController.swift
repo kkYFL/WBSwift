@@ -20,7 +20,8 @@ class WBTestViewController: WBBaseViewController {
         super.setUpUI()
         
         //下一个
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 16, target: self, action: #selector(nextPage))
+        //使用自定义nagationBar和navigationItem
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 16, target: self, action: #selector(nextPage))
     }
     
     func nextPage() {

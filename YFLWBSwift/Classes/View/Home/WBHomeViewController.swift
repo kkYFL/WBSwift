@@ -31,7 +31,12 @@ class WBHomeViewController: WBBaseViewController {
          
          */
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriends))
+        
+        /*
+         navigationItem
+         不使用navigationItem：隐藏了系统nagationBar自定义了nagationBar和navagationItem：navItem，故不适用navigationItem
+         */
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriends))
   
     
     }
