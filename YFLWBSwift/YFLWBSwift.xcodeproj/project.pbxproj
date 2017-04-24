@@ -31,6 +31,7 @@
 		3A31F8EF1EA8B67C00018466 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8E11EA8B67C00018466 /* UIScreen+CZAddition.m */; };
 		3A31F8F01EA8B67C00018466 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8E31EA8B67C00018466 /* UIView+CZAddition.m */; };
 		3A31F8F11EA8B67C00018466 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A31F8E51EA8B67C00018466 /* UIViewController+CZAddition.m */; };
+		3A5D8EC31EAD9FEF001FB536 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D8EC21EAD9FEF001FB536 /* UIBarButtonItem+Extensions.swift */; };
 		3ADEC08D1EA907940039FEC8 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEC08C1EA907940039FEC8 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		3A31F8E41EA8B67C00018466 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		3A31F8E51EA8B67C00018466 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		3A31F8F21EA8B70E00018466 /* WB-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WB-bridge.h"; sourceTree = "<group>"; };
+		3A5D8EC21EAD9FEF001FB536 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		3ADEC08C1EA907940039FEC8 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				3ADEC08C1EA907940039FEC8 /* Bundle+Extensions.swift */,
+				3A5D8EC21EAD9FEF001FB536 /* UIBarButtonItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A31F8ED1EA8B67C00018466 /* UIColor+CZAddition.m in Sources */,
+				3A5D8EC31EAD9FEF001FB536 /* UIBarButtonItem+Extensions.swift in Sources */,
 				3A31F8E61EA8B67C00018466 /* NSArray+Log.m in Sources */,
 				3A31F8C51EA8AD9E00018466 /* WBDiscoverController.swift in Sources */,
 				3A31F8EE1EA8B67C00018466 /* UILabel+CZAddition.m in Sources */,

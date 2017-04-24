@@ -18,6 +18,13 @@ class WBTestViewController: WBBaseViewController {
     
     override func setUpUI() {
         super.setUpUI()
+        
+        //下一个
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 16, target: self, action: #selector(nextPage))
+    }
+    
+    func nextPage() {
+        print("next!")
     }
 
     override func didReceiveMemoryWarning() {

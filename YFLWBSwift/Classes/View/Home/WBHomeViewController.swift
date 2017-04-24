@@ -20,8 +20,20 @@ class WBHomeViewController: WBBaseViewController {
     override func setUpUI() {
         super.setUpUI()
         
-        //设置导航栏按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
+        //设置导航栏按钮,局限性系统的按钮没有高亮
+
+        /*
+         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
+         
+         //Swift调用OC方法，返回instanceType，无法判断返回的类型
+         let btn: UIButton = UIButton.cz_textButton("好友", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+         btn.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
+         
+         */
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 16, target: self, action: #selector(showFriends))
+  
+    
     }
     
     //显示好友
