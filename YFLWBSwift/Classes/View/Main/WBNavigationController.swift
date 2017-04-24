@@ -25,8 +25,27 @@ class WBNavigationController: UINavigationController {
         if childViewControllers.count > 0 {
             //隐藏底部的TabBar
             viewController.hidesBottomBarWhenPushed = true
+            
+            var title = "返回"
+            if childViewControllers.count == 1 {
+                // title 显示首页的标题
+                title = childViewControllers.first?.title ?? "返回"
+            }
+            //判断控制器的类型
+            if let vc = viewController as? WBBaseViewController {
+                //取出自定义的naviItem
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParentVC))
+            }
         }
+        
+
+        
+        
         super.pushViewController(viewController, animated: true)
+    }
+    
+    @objc private func popToParentVC() {
+        popViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {
